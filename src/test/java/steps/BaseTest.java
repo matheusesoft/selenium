@@ -46,9 +46,6 @@ public class BaseTest {
 		
 		cenario.embed(((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES), "image/png");
 		
-		if(Propriedades.getInstance().getProperty("KILL").equals("FECHAR_BROWSER")) {
-			killDriver();
-		}
 	}
 	
 	@BeforeStep
